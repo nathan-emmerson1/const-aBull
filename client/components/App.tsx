@@ -1,4 +1,5 @@
 import Nav from './Nav'
+import { Outlet } from 'react-router-dom'
 
 import { useState } from 'react'
 // import data from ''
@@ -35,9 +36,12 @@ function App() {
       <button className="button" onClick={handleNext}>
         Next
       </button>
+      <div className="mainheader">
+        <Nav />
+        <Outlet />
+      </div>
     </div>
   )
 }
 
 export default App
-

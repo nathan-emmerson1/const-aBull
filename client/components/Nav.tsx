@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import data from '../../data/reigon'
+import data from '../../data/region'
 
 function Nav() {
   return (
@@ -8,7 +8,7 @@ function Nav() {
       <ul>
         {Object.keys(data).map((island) => (
           <li key={island}>
-            <Link to={`/reigon/${island}`}>{island}</Link>
+            <Link to={`/region/${island}`}>{island}</Link>
           </li>
         ))}
       </ul>

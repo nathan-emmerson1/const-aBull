@@ -6,13 +6,13 @@ import {
 } from 'react-router-dom'
 import App from './components/App'
 import Home from './components/Home'
-import Walk from './components/Walks.tsx'
+import Walks from './components/Walks.tsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements([
     <Route path="/" element={<App />} />,
     <Route index element={<Home />} />,
-    <Route path="Walk/:WalkId" element={<Walk />} />,
+    <Route path="Walks/:WalkId" element={<Walks />} />,
   ])
 )
 

@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import data from '../../data/greatwalks'
+import data from '../../data/greatwalks.ts'
 
 export default function Walks() {
   const { walk } = useParams()
