@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react'
+import { Rating } from 'react-simple-star-rating'
+
 export default function Review() {
   //use state to control the state change of form
   const [newReview, setNewReview] = useState('')

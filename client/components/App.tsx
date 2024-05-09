@@ -2,6 +2,8 @@ import Nav from './Nav'
 import { Outlet } from 'react-router-dom'
 
 import { useState } from 'react'
+import GreatWalks from './Walks'
+import Review from './Review'
 // import data from ''
 
 function App() {
@@ -28,8 +30,10 @@ function App() {
         alt="nz best place"
         src="/images/.png" // Add correct image source
       />
-      <li></li>
-
+      <li>
+        <GreatWalks />
+        <Review />
+      </li>
       <button className="button" onClick={handleBack}>
         Back
       </button>
