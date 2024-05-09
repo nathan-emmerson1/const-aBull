@@ -3,3 +3,7 @@ body {
   color: #0a1520;
   font-family: 'Poppins', sans-serif;
 }
+#review {
+  width: 300px;
+  height: 150px;
+}
