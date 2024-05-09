@@ -8,9 +8,9 @@ interface Island {
   Walks: Walk[]
 }
 
-export type ContinentData = Record<string, Island>
+export type IslandData = Record<string, Island>
 
-const data: ContinentData = {
+const data: IslandData = {
   North: {
     image: '',
     Walks: [
