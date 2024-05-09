@@ -1,5 +1,6 @@
 export default [
   {
+    code: 'AT',
     name: 'Abel Tasman Coast Track',
     region: 'South Island, Nelson/Tasman region',
     distance: '60km one way',
@@ -9,6 +10,7 @@ export default [
       'Blessed with a mild climate, golden beaches and lush coastal native bush, the Abel Tasman Coast Track has it all. Choose to hike the whole track, water taxi between different locations or kayak from Mārahau to campsites in the southern section of the track at any time of the year.',
   },
   {
+    code: 'HT',
     name: 'Heaphy Track',
     region: 'South Island, Nelson/Tasman and West Coast regions',
     distance: '78.4km one way',
