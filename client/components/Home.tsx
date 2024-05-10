@@ -1,21 +1,27 @@
-import Nav from './Nav'
+import image from '../../Images/nz.png'
+import { Link, Outlet } from 'react-router-dom'
 
 function Home() {
-  const titleStyle = {
-    fontSize: '3rem',
-  }
   return (
     <div>
-      <h2 style={titleStyle}>The Great New Zealand Great Walk Guide</h2>
-      <p className="justified-paragraph">
-        Welcome to your one-stop guide to New Zealand's Great Walks! Whether
-        you're a seasoned tramper or an adventurous first-timer, we've got you
-        covered. Dive into reviews, stunning photos, and insider tips for all
-        ten of these iconic trails. Let us help you find your perfect match,
-        plan your dream hike, and experience the best of New Zealand's
-        breathtaking scenery.
+      <h1>The Great New Zealand Great Walk Guide</h1>
+      <img className="nz" src={image} alt="" />
+      <p>
+        Welcome to your one-stop guide to New Zealand&apos;s Great Walks!
+        Whether you&apos;re a seasoned tramper or an adventurous first-timer,
+        we&apos;ve got you covered. Dive into reviews, stunning photos, and
+        insider tips for all ten of these iconic trails. Let us help you find
+        your perfect match, plan your dream hike, and experience the best of New
+        Zealand&apos;s breathtaking scenery.
       </p>
-      <Nav />
+      <p>
+        <Link to="/northisland">North Island</Link>
+      </p>
+      <p>
+        <Link to="/southisland">South Island</Link>
+      </p>
+
+      <Outlet />
     </div>
   )
 }
