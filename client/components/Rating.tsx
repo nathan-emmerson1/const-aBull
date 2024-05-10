@@ -28,3 +28,5 @@ export function MyComponent() {
     </div>
   )
 }
+
+export default Rating

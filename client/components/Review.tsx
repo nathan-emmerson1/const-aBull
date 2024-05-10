@@ -5,6 +5,9 @@ import { Rating } from 'react-simple-star-rating'
 export default function Review() {
   //use state to control the state change of form
   const [newReview, setNewReview] = useState('')
+  const [rating, setRating] = useState(0)
+  // const [useState, setState] = useState('Select')
+
   //handlechange
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewReview(event.target.value)
@@ -14,6 +17,11 @@ export default function Review() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setNewReview('')
+  }
+
+  //handleRating
+  const handleRating = (rate: number) => {
+    setRating(rate)
   }
 
   return (
@@ -27,6 +35,9 @@ export default function Review() {
           defaultValue="Please write your review here"
           onChange={handleChange}
         />
+        <div>
+          <Rating onClick={handleRating} />
+        </div>
         <div>
           <button>Submit</button>
         </div>

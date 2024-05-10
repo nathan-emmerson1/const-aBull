@@ -13,3 +13,18 @@ body {
 .button {
   width: 100px;
 }
+
+#nz {
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.justified-paragraph {
+  text-align: justify; /* Justify the text */
+  margin: 3rem;
+  font-size: 1.5rem; /* Set margin for the paragraph */
+}
