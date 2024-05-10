@@ -17,11 +17,12 @@ export default function Review() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setNewReview('')
+    // setRating(rating = 0)
   }
 
   //handleRating
-  const handleRating = (rate: number) => {
-    setRating(rate)
+  const handleRating = (rating: number) => {
+    setRating(rating)
   }
 
   return (
@@ -32,7 +33,6 @@ export default function Review() {
           id="review"
           name="review"
           value={newReview}
-          defaultValue="Please write your review here"
           onChange={handleChange}
         />
         <div>
