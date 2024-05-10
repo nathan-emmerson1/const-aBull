@@ -1,19 +1,17 @@
 import { useParams } from 'react-router-dom'
 import data from '../../data/greatwalks.ts'
 
-export default function Walks() {
-  const { walk } = useParams()
-
-  if (walk == undefined) {
-    throw new Error()
-  }
-
-  const currentWalk = data[walk]
-
+function GreatWalks() {
+  const { name } = useParams()
   return (
-    <>
-      <h1>{walk}</h1>
-      <img src={`images/${currentWalk.image}`} alt="" />
-    </>
+    <div>
+      <h2>{name}</h2>
+      <ul>
+        {data.map((walk) => (
+          <li key={walk.code}>{walk.name}</li>
+        ))}
+      </ul>
+    </div>
   )
 }
+export default GreatWalks
