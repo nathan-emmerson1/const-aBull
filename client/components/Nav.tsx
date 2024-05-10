@@ -8,7 +8,7 @@ function Nav() {
       <ul>
         {Object.keys(data).map((island) => (
           <li key={island}>
-            <Link to={`/region/${island}`}>{island}</Link>
+            <Link to={`/walks/${island}`}>{island}</Link>
           </li>
         ))}
       </ul>

@@ -8,12 +8,12 @@ export default function Walks() {
     throw new Error()
   }
 
-  const currentWalk = data[walk]
+  // const currentWalk = data[walk]
 
   return (
     <>
       <h1>{walk}</h1>
-      <img src={`images/${currentWalk.image}`} alt="" />
+      {/* <img src={`images/${currentWalk.image}`} alt="" /> */}
     </>
   )
 }
