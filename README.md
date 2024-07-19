@@ -1,25 +1,16 @@
-# React Boilerplate
+# Group Project
 
-## Packages Included
+## Great Walks
 
-- react
-- react-router-dom
-- express
-- vite
-- vitest
-- eslint
+### Tech Stacks
+* react
+* react-router-dom
+* express
+* vite
+* vitest
+* eslint
 
-## Setup
 
-- [ ] Clone this repo, navigate to it, install packages, and start the server with `npm run dev`
-  <details style="padding-left: 2em">
-    <summary>Tip</summary>
+# Learning Objectives
+We wanted to create app that allow user to come and view and review all the great walk of nz 
 
-    ```sh
-    npm install
-    npm run dev
-    ```
-  </details>
-
----
-[Provide feedback on this repo](https://docs.google.com/forms/d/e/1FAIpQLSfw4FGdWkLwMLlUaNQ8FtP2CTJdGDUv6Xoxrh19zIrJSkvT4Q/viewform?usp=pp_url&entry.1958421517=boilerplate-react)
